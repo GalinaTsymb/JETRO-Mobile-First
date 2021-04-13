@@ -1,0 +1,126 @@
+html{
+  box-sizing: border-box;
+}
+*,*::after, *::before{
+  box-sizing: inherit;
+}
+
+body{
+  min-width: 320px;
+  overflow-x: hidden;
+  padding-top: 80px;
+  font-size: 16px;
+}
+
+h2{
+  font-size: 1.1rem;
+  line-height: 1.1;
+  color: $color-main;
+  text-transform: uppercase;
+  font-family: $bebas;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.66px;
+
+  @include break(min768) {
+    font-size: 1.2rem;
+  }
+  @include break(min1024) {
+    font-size: 1.4rem;
+  }
+}
+
+h3{
+  font-size: 1rem;
+  line-height: 1;
+  color: $color-grey;
+  font-family: $bebas;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+
+  @include break(min1024) {
+    font-size: 1.3rem;
+  }
+}
+
+p {
+  font-style: normal;
+  font-size: 0.66rem;
+  line-height: 1.5;
+  color: #414141;
+  font-family: $helvetica;
+  font-weight: normal;
+
+  @include break(min768) {
+    font-size: 0.76rem;
+  }
+}
+
+.line-grey {
+  position: relative;
+  line-height: 1;
+
+  &:after {
+    content: "";
+    width: 65%;
+    height: 80%;
+    position: absolute;
+    color: $color-light;
+    background-color: $color-light;
+    background-image: repeating-linear-gradient(-45deg, #f7f7f7, #f7f7f7 0.1em, #f3f3ec 0.001em, #edede7 0.15em);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    @include break(min375) {
+      width: 70%;
+    }
+    @include break(min420) {
+      width: 75%;
+    }
+    @include break(min640) {
+      width: 80%;
+    }
+    @include break(min1024) {
+      width: 85.6%;
+    }
+  }
+}
+
+.display-link{
+  display: block;
+  padding-top: 5px;
+}
+.email, .tel{
+  display: block;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover{
+    color: $color-grey;
+    transition: color 0.3s;
+  }
+}
+
+.pad-bot-15{
+  padding-bottom: 15px;
+}
+.pad-bot-18{
+  padding-bottom: 18px;
+}
+
+.twitter{
+  font-weight: 300;
+  font-family: $helvetica;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: $color-white-opacity;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover{
+    color: $color-grey;
+    transition: color 0.3s;
+  }
+}

@@ -1,0 +1,42 @@
+.works{
+  padding-bottom: 27px;
+
+  &__wrapper{
+    padding-top: 31px;
+
+    @include break(min768) {
+      padding-top: 21px;
+    }
+  }
+
+  &__item{
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  &__item-title:hover {
+    color: $color-dark-grey;
+  }
+
+  &__item-picture{
+    width: 100%;
+    height: auto;
+  }
+
+  &__item-desc{
+    margin-top: -3px;
+    padding: 13px 15px 8px 15px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  &__item-date{
+    font-size: 0.78rem;
+    line-height: 1.63;
+    color: $color-main;
+    @extend %fontFWS;
+    margin-top: -2px;
+    display: block;
+  }
+}

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasBold/BebasNeueBold.eot');
+  src: url('../fonts/BebasBold/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BebasBold/BebasNeueBold.woff2') format('woff2'),
+  url('../fonts/BebasBold/BebasNeueBold.woff') format('woff'),
+  url('../fonts/BebasBold/BebasNeueBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeue-Light/HelveticaNeue-Light.eot');
+  src: url('../fonts/HelveticaNeue-Light/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeue-Light/HelveticaNeue-Light.woff2') format('woff2'),
+  url('../fonts/HelveticaNeue-Light/HelveticaNeue-Light.woff') format('woff'),
+  url('../fonts/HelveticaNeue-Light/HelveticaNeue-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeue-Regular/HelveticaNeue.eot');
+  src: url('../fonts/HelveticaNeue-Regular/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeue-Regular/HelveticaNeue.woff2') format('woff2'),
+  url('../fonts/HelveticaNeue-Regular/HelveticaNeue.woff') format('woff'),
+  url('../fonts/HelveticaNeue-Regular/HelveticaNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,39 @@
+.social-links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; // if icons will be more
+
+  &__facebook, &__twitter,
+  &__email, &__rss, &__vimeo  {
+    display: block;
+    @include Width-Height(30px, 30px);
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: opacity(1) invert(0.17) brightness(1.3) saturate(2.6) sepia(0.25) contrast(1);
+      transition: filter 0.3s;
+    }
+  }
+  &__facebook{
+    background-image: url("../../assets/images/facebook.png");
+  }
+  &__twitter{
+    background-image: url("../../assets/images/twitter.png");
+  }
+  &__email{
+    background-image: url("../../assets/images/email.png");
+  }
+  &__rss{
+    background-image: url("../../assets/images/rss.png");
+  }
+  &__vimeo{
+    background-image: url("../../assets/images/vimeo.png");
+  }
+  &__item{
+    padding-right: 5px;
+    padding-bottom: 5px;  // if icons will be more
+  }
+  &__item:last-child{
+    padding-right: 0;
+  }
+}

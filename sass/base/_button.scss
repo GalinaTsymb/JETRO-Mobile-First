@@ -1,0 +1,16 @@
+.btn-more{
+  display: inline-block;
+  padding: 4px 16px;
+  background-color: $color-main;
+  font-size: 0.8rem;
+  line-height: 1.9;
+  color: #ffffff;
+  @extend %fontFWS;
+  letter-spacing: 0.6px;
+  transition: background-color 0.3s;
+
+  &:hover{
+    background-color: $color-main-opacity;
+    transition: background-color 0.3s;
+  }
+}

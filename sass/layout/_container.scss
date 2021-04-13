@@ -1,0 +1,31 @@
+.container{
+  padding: 0 20px;
+  width: 100%;
+
+  @include break(min640) {
+    padding: 0 30px;
+  }
+
+  @include break(min768) {
+    padding: 0 40px;
+  }
+
+  @include break(min1024) {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include break(min768){
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+}

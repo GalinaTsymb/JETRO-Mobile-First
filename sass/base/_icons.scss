@@ -1,0 +1,33 @@
+.icon-customization{
+  position: relative;
+
+  &:before{
+    content: url("../../assets/images/icon.png");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+}
+.icon-ok{
+  position: relative;
+
+  &:before{
+    content: url("../../assets/images/icon-ok.png");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+}
+.icon-men{
+  position: relative;
+
+  &:before{
+    content: url("../../assets/images/icon-men.png");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+}

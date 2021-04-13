@@ -1,0 +1,119 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: $color-wh-lit-opac;
+  padding-top: 16px;
+  padding-bottom: 7px;
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include break(min640) {
+      padding: 0 30px;
+    }
+    @include break(min1024) {
+      padding: 0 0;
+    }
+  }
+}
+
+// nav-menu start
+
+.menu{
+  margin: 0;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 200%;
+  background: $color-dark;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  transition: .8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include break(min768) {
+    position: relative;
+    background: inherit;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: initial;
+    overflow-y: hidden;
+  }
+
+  &_opened {
+    left: 0;
+    transition: .8s;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+
+    @include break(min768){
+      flex-direction: row;
+
+      & li:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__item{
+    padding-bottom: 20px;
+
+    @include break(min768) {
+      margin-right: 24px;
+      padding-bottom: 0;
+    }
+
+    &--content{
+      font-size: 1.25rem;
+      color: $color-grey;
+      @extend  %fontFWS;
+      letter-spacing: 1px;
+      cursor: pointer;
+
+      &:hover{
+        color: $color-main-opacity;
+      }
+    }
+  }
+}
+.js-item-active{
+  color: $color-main;
+}
+
+.hamburger{
+  @include Width-Height(30px, 22px);
+  padding: 0;
+
+  @include break(min768) {
+    display: none;
+  }
+}
+.hamburger-close{
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  z-index: 99;
+
+  svg {
+    pointer-events: none;
+  }
+
+  @include break(min768) {
+    display: none;
+  }
+}
+
+// nav-menu end

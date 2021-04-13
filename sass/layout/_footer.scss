@@ -1,0 +1,58 @@
+.footer{
+  background-color:$color-main;
+
+  @include break(min768) {
+    background-color: $color-pink;
+  }
+
+  &__wrapper{
+    background: $color-main;
+    text-align: center;
+
+    @include break(min768) {
+      border-left: 10px solid white;
+      border-right: 10px solid white;
+      text-align: left;
+    }
+  }
+
+  &__column{
+    padding-top: 35px;
+    padding-bottom: 15px;
+
+    @include break(min768) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @include break(min1024) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+
+  &__column-title{
+    font-size: 1.6rem;
+    line-height: 1.1;
+    color: $color-white;
+    @extend %fontFWS;
+    padding-bottom: 21px;
+    letter-spacing: 1px;
+  }
+
+  &__column-desc{
+    font-size: 0.75rem;
+    color: $color-white;
+    font-family: $helvetica;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  &__column-social{
+    padding-top: 18px;
+    justify-content: center;
+
+    @include break(min768) {
+      justify-content: flex-start;
+    }
+  }
+}

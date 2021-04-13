@@ -1,0 +1,17 @@
+
+.logo {
+  display: inline-block;
+  cursor: pointer;
+
+  &__link{
+    font-size: 3rem;
+    line-height: 1.2;
+    color: $color-main;
+    @extend %fontFWS;
+    text-transform: uppercase;
+
+    & i{
+      color: $color-main-opacity ;
+    }
+  }
+}
